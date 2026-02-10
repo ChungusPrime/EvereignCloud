@@ -7,9 +7,7 @@ const DatabaseStatements = [
             "username" varchar(45),
             "email" varchar(45),
             "password" varchar(100),
-            "created_date" varchar(100),
-            "email_confirmed" varchar(45),
-            "email_confirmed_date" varchar(45),
+            "created_date" varchar(100)
             PRIMARY KEY ("id")
         );`
     },
@@ -20,6 +18,7 @@ const DatabaseStatements = [
             "id" varchar(100) NOT NULL,
             "account_id" varchar(45),
             "data" varchar(45),
+            "name" varchar(50),
             PRIMARY KEY ("id")
         );`
     }
